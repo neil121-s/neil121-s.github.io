@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Django基础</title>
+      <link href="/2022/09/02/Django%E5%9F%BA%E7%A1%80/"/>
+      <url>/2022/09/02/Django%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h1><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><pre><code>django-admin startproject mysite</code></pre><blockquote><p>会创建以下目录和文件</p></blockquote><ul><li>外层的 mysite&#x2F; 根目录是项目的容器。这个目录的名称对 Django 没有什么作用，你可以根据喜好重命名。</li><li>manage.py 是一个命令行实用脚本，可以通过不同的方式与 Django 项目交互。这个文件的详细说明参<br>见 Django Project 网站。</li><li>内部的 mysite&#x2F; 目录是项目的 Python 包。导入这里面的内容时要使用目录的名称（如<br>mysite.urls ）。</li><li>mysite&#x2F;init.py 是一个空文件，目的是让 Python 把这个目录识别为 Python 包。<br>Python，关于包的说明请阅读 Python 官方文档。）</li><li>mysite&#x2F;settings.py 是 Django 项目的设置&#x2F;配置。附录 D 对设置做了详细说明。</li><li>mysite&#x2F;urls.py 是 Django 项目的 URL 声明，即 Django 驱动的网站的“目录”。</li><li>mysite&#x2F;wsgi.py 是兼容 WSGI 的 Web 服务器的入口点，用于伺服项目</li></ul><h2 id="创建应用"><a href="#创建应用" class="headerlink" title="创建应用"></a>创建应用</h2><pre><code>python manage.py startapp myapp</code></pre><blockquote><p>执行上面的命令会在当前路径下创建<code>myapp</code>目录，其目录结构如下所示：</p></blockquote><ul><li><code>__init__.py</code>：一个空文件，告诉Python解释器这个目录应该被视为一个Python的包。</li><li><code>admin.py</code>：可以用来注册模型，用于在Django框架自带的管理后台中管理模型。</li><li><code>apps.py</code>：当前应用的配置文件。</li><li><code>migrations</code>：存放与模型有关的数据库迁移信息。<ul><li><code>__init__.py</code>：一个空文件，告诉Python解释器这个目录应该被视为一个Python的包。</li></ul></li><li><code>models.py</code>：存放应用的数据模型（MTV中的M）。</li><li><code>tests.py</code>：包含测试应用各项功能的测试类和测试函数。</li><li><code>views.py</code>：处理用户HTTP请求并返回HTTP响应的函数或类（MTV中的V）。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 能工巧匠路 </category>
+          
+          <category> Python </category>
+          
+          <category> Django笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> Django </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python</title>
       <link href="/2022/08/31/Python/"/>
       <url>/2022/08/31/Python/</url>
